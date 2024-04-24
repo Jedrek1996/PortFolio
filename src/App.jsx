@@ -1,19 +1,11 @@
 import React from "react";
-import Navbar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import About from "./components/About";
-import Project from "./components/Project";
+import MainDisplay from "./components/MainDisplay";
 
 const App = () => {
   return (
-    <>
-      <Navbar></Navbar>
-      <Hero />
-      <Skills></Skills>
-      <About></About>
-      <Project></Project>
-    </>
+    <React.Fragment>
+      <MainDisplay></MainDisplay>
+    </React.Fragment>
   );
 };
 
