@@ -3,9 +3,9 @@ import MainDisplay from "./components/MainDisplay";
 
 const App = () => {
   return (
-    <React.Fragment>
-      <MainDisplay></MainDisplay>
-    </React.Fragment>
+    <div className="bg-stone-400">
+      <MainDisplay />
+    </div>
   );
 };
 
