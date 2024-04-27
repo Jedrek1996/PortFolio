@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Sections from "./Sections";
+import Navbar from "./Hero/Navbar";
+import Sections from "./SectionLayout/Sections";
 
 function MainDisplay() {
   return (
