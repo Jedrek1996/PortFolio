@@ -7,3 +7,20 @@
     @apply mx-auto max-w-7xl px-8;
   }
 }
+
+@layer base {
+  body {
+    @apply font-sedan;
+  }
+}
+
+/* Colours Used 
+Gradients: 
+- Background bg-gradient-to-r from-blue-500 to-blue-200
+- Headers bg-gradient-to-r from-red-400 to-yellow-200 
+
+Main Colours:
+
+
+
+*/

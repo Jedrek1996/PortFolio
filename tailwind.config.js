@@ -2,7 +2,17 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sedan: ["Sedan", "serif"], // Add this line
+      },
+      // If you want to apply the font only to inputs
+      components: {
+        input: {
+          fontFamily: "sedan",
+        },
+      },
+    },
   },
   plugins: [],
 };
