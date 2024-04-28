@@ -3,7 +3,11 @@ import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div
+      className={` items-center justify-center h-screen 
+        flex
+        }`}
+    >
       <div className="max-w-4xl mx-auto px-4 py-8 sm:py-24 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <h1 className="text-7xl font-bold tracking-wider">
           <span className="bg-gradient-to-r from-blue-500 to-blue-200 text-transparent bg-clip-text">
@@ -24,13 +28,13 @@ const Hero = () => {
 
         <div className="flex gap-x-4 mt-4 sm:justify-center">
           <a href="#">
-            <FaGithubSquare className="h-8 w-8 text-blue-200 hover:text-red-700 duration-300" />
+            <FaGithubSquare className="h-8 w-8 text-blue-200 hover:text-blue-300 duration-300" />
           </a>
           <a href="#">
-            <FaLinkedin className="h-8 w-8 text-blue-200 hover:text-red-700 duration-300" />
+            <FaLinkedin className="h-8 w-8 text-blue-200 hover:text-blue-300 duration-300" />
           </a>
           <a href="#">
-            <FaTwitterSquare className="h-8 w-8 text-blue-200 hover:text-red-700 duration-300" />
+            <FaTwitterSquare className="h-8 w-8 text-blue-200 hover:text-blue-300 duration-300" />
           </a>
         </div>
       </div>
