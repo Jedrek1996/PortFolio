@@ -20,6 +20,18 @@
   }
 }
 
+#mainBranch {
+  width: 1.625rem;
+  background-color: rgba(255, 255, 255, 0.73);
+  height: 30rem;
+  transition: 0.5s;
+  margin: 0 0.6rem;
+  border-radius: 25px;
+}
+
+.subBranchClass {
+}
+
 /* Colours Used 
 Gradients: 
 - Background bg-gradient-to-r from-blue-500 to-blue-200

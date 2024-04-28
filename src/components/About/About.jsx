@@ -4,6 +4,7 @@ import SectionTitle from "../SectionLayout/SectionTitle";
 import { useInView } from "react-intersection-observer";
 import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
 import { aboutMe } from "../../data";
+import { FaPersonChalkboard } from "react-icons/fa6";
 
 const About = () => {
   const { ref, inView } = useInView();
@@ -17,7 +18,10 @@ const About = () => {
         <div className="align-element grid md:grid-cols-2 items-center gap-16">
           <img src={aboutSvg} className="w-full h-64" alt="" />
           <article>
-            <SectionTitle text="about me" />
+            <div className="flex items-center">
+              <SectionTitle text="About Me" />
+              <FaPersonChalkboard className="h-8 w-8 ml-2 mb-7 text-blue-400" />
+            </div>
             <text
               className="text-slate-500 mt-8 leading-loose font-medium"
               dangerouslySetInnerHTML={{ __html: aboutMe }}
