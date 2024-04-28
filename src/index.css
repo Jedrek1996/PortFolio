@@ -14,6 +14,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .custom-smaller {
+    width: 30%;
+  }
+}
+
 /* Colours Used 
 Gradients: 
 - Background bg-gradient-to-r from-blue-500 to-blue-200
