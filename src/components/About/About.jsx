@@ -1,26 +1,31 @@
-import React from "react";
+import { React, useEffect } from "react";
 import aboutSvg from "../../assets/about.svg";
 import SectionTitle from "../SectionLayout/SectionTitle";
+import { useInView } from "react-intersection-observer";
+import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
+import { aboutMe } from "../../data";
 
 const About = () => {
+  const { ref, inView } = useInView();
   return (
-    <section className="bg-whit py-20" id="about">
-      <div className="align-element grid md:grid-cols-2 items-center gap-16">
-        <img src={aboutSvg} className="w-full h-64" alt="" />
-        <article>
-          <SectionTitle text="code and coffee" />
-          <p className="text-slate-600 mt-8 leading-loose">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            repudiandae quaerat atque, aliquid consectetur corrupti quae,
-            doloremque animi vero molestiae temporibus cum necessitatibus sit
-            sequi odit! Id quae voluptatem doloribus, tenetur aut eveniet soluta
-            illum impedit! Numquam eveniet suscipit architecto ullam soluta
-            perferendis, accusamus autem labore. Soluta, atque velit!
-            Perspiciatis?
-          </p>
-        </article>
-      </div>
-    </section>
+    <div ref={ref}>
+      <section
+        className=" py-32"
+        id="about"
+        style={{ ...(inView ? showStyles : hiddenStyles) }}
+      >
+        <div className="align-element grid md:grid-cols-2 items-center gap-16">
+          <img src={aboutSvg} className="w-full h-64" alt="" />
+          <article>
+            <SectionTitle text="about me" />
+            <text
+              className="text-slate-500 mt-8 leading-loose font-medium"
+              dangerouslySetInnerHTML={{ __html: aboutMe }}
+            ></text>
+          </article>
+        </div>
+      </section>
+    </div>
   );
 };
 
