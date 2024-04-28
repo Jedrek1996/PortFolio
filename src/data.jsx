@@ -9,6 +9,10 @@ import {
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
+import ubIcon from "./assets/experienceIcons/UBIcon.png";
+import esriIcon from "./assets/experienceIcons/esriIcon.jpg";
+import foodpandaIcon from "./assets/experienceIcons/foodpandaIcon.png";
+import ncsLogo from "./assets/experienceIcons/ncsLogo.png";
 
 export const skills = [
   {
@@ -124,3 +128,40 @@ to level up my front-end development skills. Let's connect and
 create something awesome together!\n
 </p>
 `;
+
+export const experiencesData = [
+  [
+    {
+      position: "Software Engineer",
+      company: "NCS",
+      description:
+        " Fullstack Software Engineer at NCS, assigned to the Attorney General's Chambers project",
+      icon: ncsLogo,
+      date: "2024-05-05",
+    },
+    {
+      position: "Software Engineer Trainee",
+      company: "foodpanda",
+      description:
+        "Back-End Developer Trainee for the Ordering Domain (Order Tracking and Checkout Team)",
+      icon: foodpandaIcon,
+      date: "2024-05-12",
+    },
+    {
+      position: "Associate Front End Developer",
+      company: "ESRI Singapore",
+      description:
+        "Front-End Developer for the Geospace Sea Web Application for the Maritime Port and Authority (MPA) of Singapore",
+      icon: esriIcon,
+      date: "2024-05-19",
+    },
+    {
+      position: "Student",
+      company: "University at Buffalo, SIM Campus",
+      description:
+        "Graduate with a Bachelor of Science degree in Geographic Information Science with honors (cum laude)",
+      icon: ubIcon,
+      date: "2024-05-26",
+    },
+  ],
+];

@@ -22,10 +22,10 @@ const About = () => {
               <SectionTitle text="About Me" />
               <FaPersonChalkboard className="h-8 w-8 ml-2 mb-7 text-blue-400" />
             </div>
-            <text
+            <div
               className="text-slate-500 mt-8 leading-loose font-medium"
               dangerouslySetInnerHTML={{ __html: aboutMe }}
-            ></text>
+            ></div>
           </article>
         </div>
       </section>
