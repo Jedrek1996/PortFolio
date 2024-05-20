@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { links } from "../../../constants/data";
+import { links } from "../../assets/constants/data";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);

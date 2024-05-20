@@ -11,9 +11,6 @@ const Footer = () => {
               <span className="text-[15px] ml-[6px]">Instagram</span>
             </p>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">Twitter</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">Linkedin</span>
             </p>
           </div>

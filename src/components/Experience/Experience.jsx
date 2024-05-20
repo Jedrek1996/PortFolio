@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { experiencesData } from "../../../constants/data";
+import { experiencesData } from "../../assets/constants/data";
 
 function Experience() {
   const commonStyles = {
@@ -42,17 +42,15 @@ function Experience() {
                 />
               }
             >
-              <div className="hover:scale-110 transition-transform duration-300">
-                <h3 className="vertical-timeline-element-title experienceHeader">
-                  {experience.position}
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle text-xs experienceCompany">
-                  {experience.company} ({experience.date})
-                </h4>
-                <p className="experienceBody font-normal">
-                  {experience.description}
-                </p>
-              </div>
+              <h3 className="vertical-timeline-element-title experienceHeader">
+                {experience.position}
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle text-xs experienceCompany">
+                {experience.company} ({experience.date})
+              </h4>
+              <p className="experienceBody font-normal">
+                {experience.description}
+              </p>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>

@@ -15,7 +15,7 @@ const Hero = () => {
             </span>
           </h1>
           <div className="absolute bottom-8 -right-36 z-0">
-            <Lottie
+            {/* <Lottie
               className="inline-block"
               animationData={heroAnimation}
               style={{
@@ -23,7 +23,7 @@ const Hero = () => {
                 height: "auto",
                 opacity: 0.25,
               }}
-            />
+            /> */}
           </div>
         </div>
 
