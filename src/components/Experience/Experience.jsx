@@ -9,16 +9,11 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../../../constants/data";
 
 function Experience() {
-  const [hoveredElement, setHoveredElement] = useState(null);
-
   const commonStyles = {
-    background: "rgb(169, 205, 246)",
+    background: "rgb(181, 211, 248)",
     color: "rgb(100 116 139)",
-  };
-
-  const hoverStyles = {
-    background: "rgb(100, 116, 139)",
-    color: "rgb(169, 205, 246)",
+    border: "none",
+    boxShadow: "0px 0px 10px #ffffff",
   };
 
   const commonClassNames = "vertical-timeline-element--work";
@@ -37,29 +32,27 @@ function Experience() {
             <VerticalTimelineElement
               key={index}
               className={commonClassNames}
-              contentStyle={
-                hoveredElement === index ? hoverStyles : commonStyles
-              }
+              contentStyle={commonStyles}
               contentArrowStyle={contentArrowStyle}
-              iconStyle={hoveredElement === index ? hoverStyles : commonStyles}
+              iconStyle={commonStyles}
               icon={
                 <img
                   src={experience.icon}
                   className="rounded-full w-15 h-15 mx-auto"
                 />
               }
-              onMouseEnter={() => setHoveredElement(index)}
-              onMouseLeave={() => setHoveredElement(null)}
             >
-              <h3 className="vertical-timeline-element-title experienceHeader">
-                {experience.position}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-xs experienceCompany">
-                {experience.company} ({experience.date})
-              </h4>
-              <p className="experienceBody font-normal">
-                {experience.description}
-              </p>
+              <div className="hover:scale-110 transition-transform duration-300">
+                <h3 className="vertical-timeline-element-title experienceHeader">
+                  {experience.position}
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle text-xs experienceCompany">
+                  {experience.company} ({experience.date})
+                </h4>
+                <p className="experienceBody font-normal">
+                  {experience.description}
+                </p>
+              </div>
             </VerticalTimelineElement>
           ))}
         </VerticalTimeline>
