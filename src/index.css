@@ -20,6 +20,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Jaro", sans-serif;
   cursor: default;
@@ -30,19 +34,29 @@ body {
 }
 
 .experienceHeader {
-  color: #f7d3eafa;
+  color: #f0d5f5;
   font-size: 1.72rem;
   font-weight: 400;
+  text-shadow: 2px 2px 5px rgba(203, 3, 222, 0.3); /* Adjust the shadow values as needed */
 }
 
 .experienceCompany {
   color: #ffffff;
   font-size: 1.1rem;
+  text-shadow: 5px 2px 5px rgba(191, 37, 205, 0.3);
 }
 
 .experienceBody {
   color: #fff;
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   font-weight: 100;
 }
 
+.experienceBackground {
+  background: rgb(181, 211, 248);
+}
+
+/* 
+ #93f7bc, #b5d3f8, #f0d5f5
+ green ,  blue   , pink
+*/
