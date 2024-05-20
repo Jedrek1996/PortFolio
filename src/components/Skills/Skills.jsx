@@ -11,7 +11,7 @@ import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
 import {
   SkillsNextArrow,
   SkillsPrevArrow,
-} from "../CustomCss&Settings/carouselSettings";
+} from "./carouselSettings";
 
 const Skills = () => {
   const { ref, inView } = useInView();
@@ -22,7 +22,7 @@ const Skills = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 3400,
     pauseOnHover: true,
     nextArrow: <SkillsNextArrow />,
     prevArrow: <SkillsPrevArrow />,
@@ -31,7 +31,7 @@ const Skills = () => {
   return (
     <div ref={ref}>
       <section
-        className={`py-px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12  mt-64
+        className={`py-px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12 mt-32
       2xlL h-80 mx-auto align-element mb-8`}
         style={{ ...(inView ? showStyles : hiddenStyles) }}
         id="skills"
