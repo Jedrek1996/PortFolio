@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../SectionLayout/SectionTitle";
-import { projects } from "../../../constants/data";
+import { projects } from "../../assets/constants/data";
 import ProjectsCard from "./ProjectsCard";
 
 const Project = () => {
