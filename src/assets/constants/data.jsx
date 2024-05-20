@@ -9,10 +9,26 @@ import {
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
 import { SiTailwindcss } from "react-icons/si";
-import ubIcon from "../src/assets/experienceIcons/UBIcon.png";
-import esriIcon from "../src/assets/experienceIcons/esriIcon.jpg";
-import foodpandaIcon from "../src/assets/experienceIcons/foodpandaIcon.png";
-import ncsLogo from "../src/assets/experienceIcons/ncsLogo.png";
+import ubIcon from "../experienceIcons/UBIcon.png";
+import esriIcon from "../experienceIcons/esriIcon.jpg";
+import foodpandaIcon from "../experienceIcons/foodpandaIcon.png";
+import ncsLogo from "../experienceIcons/ncsLogo.png";
+
+import htmlIcon from "../skillsIcons/html.png";
+import cssIcon from "../skillsIcons/css.png";
+import jsIcon from "../skillsIcons/js.png";
+import tailwindIcon from "../skillsIcons/tailwind.png";
+import reactIcon from "../skillsIcons/react.png";
+import reduxIcon from "../skillsIcons/redux.png";
+import reactQueryIcon from "../skillsIcons/reactquery.png";
+import tsIcon from "../skillsIcons/ts.png";
+import framerIcon from "../skillsIcons/framer.png";
+import nodeJsIcon from "../skillsIcons/node-js.png";
+import mysqlIcon from "../skillsIcons/mysql.png";
+import goIcon from "../skillsIcons/go.png";
+import javaIcon from "../skillsIcons/java.png";
+import pythonIcon from "../skillsIcons/python.png";
+import dojoToolKitIcon from "../skillsIcons/dojoToolKit.png";
 
 export const skills = [
   {
@@ -85,6 +101,22 @@ export const projects = [
     img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
     url: "https://react-projects.netlify.app/",
     github: "https://github.com/john-smilga",
+    title: "not first project",
+    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+  },
+  {
+    id: nanoid(),
+    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "https://react-projects.netlify.app/",
+    github: "https://github.com/john-smilga",
+    title: "idk what project",
+    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
+  },
+  {
+    id: nanoid(),
+    img: "https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800",
+    url: "https://react-projects.netlify.app/",
+    github: "https://github.com/john-smilga",
     title: "first project",
     text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores aperiam porro impedit tenetur quo hic omnis doloribus dolores enim deleniti.",
   },
@@ -130,10 +162,6 @@ create something awesome together!\n
 </p>
 `;
 
-const CustomIcon = ({ src, alt, className }) => {
-  return <img src={src} alt={alt} className={`w-8 h-8 ${className}`} />;
-};
-
 export const experiencesData = [
   [
     {
@@ -169,4 +197,97 @@ export const experiencesData = [
       date: "Aug 2019 - Aug 2022",
     },
   ],
+];
+
+export const skillsData = [
+  {
+    skill_name: "Html 5",
+    Image: htmlIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Css",
+    Image: cssIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Java Script",
+    Image: jsIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Tailwind Css",
+    Image: tailwindIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "React",
+    Image: reactIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Redux",
+    Image: reduxIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "React Query",
+    Image: reactQueryIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Type Script",
+    Image: tsIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Framer Motion",
+    Image: framerIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Node js",
+    Image: nodeJsIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "My SQL",
+    Image: mysqlIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Go",
+    Image: goIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Java",
+    Image: javaIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Python",
+    Image: pythonIcon,
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "DojoToolKit",
+    Image: dojoToolKitIcon,
+    width: 65,
+    height: 65,
+  },
 ];
