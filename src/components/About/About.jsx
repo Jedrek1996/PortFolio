@@ -5,7 +5,7 @@ import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
 import { aboutMe } from "../../../constants/data";
 import Lottie from "lottie-react";
 import morpheAnimation from "../../assets/animations/aboutMeAnimation.json";
-import "./About.css";
+import "./about.css";
 
 const About = () => {
   const { ref, inView } = useInView();
