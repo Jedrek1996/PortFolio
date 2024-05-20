@@ -1,0 +1,38 @@
+#about {
+  position: relative;
+  cursor: default;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: -1;
+  border-radius: 2rem;
+}
+
+.align-element {
+  position: relative;
+  z-index: 1;
+}
+
+.shadow-lg {
+  box-shadow: rgba(142, 191, 244, 0.4) 1px 5px,
+    rgba(137, 232, 145, 0.3) 10px 10px, rgba(96, 201, 215, 0.2) 15px 15px,
+    rgba(238, 135, 200, 0.1) 20px 20px, rgba(237, 32, 207, 0.05) 22px 22px;
+}
+
+.transition-transform {
+  transition: transform 0.8s ease;
+}
+
+.relative {
+  position: relative;
+}
+
+.article-expand {
+  transition: all 0.55s ease-in-out; /* Add transition for smooth animation */
+}

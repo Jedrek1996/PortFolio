@@ -3,8 +3,8 @@ import Hero from "../Hero/Hero";
 import Skills from "../Skills/Skills";
 import About from "../About/About";
 import Project from "../Projects/Project";
-import Carousel from "../Skills/Carousel";
 import Experience from "../Experience/Experience";
+import Footer from "../Footer/Footer";
 
 function Sections() {
   return (
@@ -14,7 +14,7 @@ function Sections() {
       <Experience />
       <Skills />
       <Project />
-      <Carousel />
+      <Footer />
     </React.Fragment>
   );
 }

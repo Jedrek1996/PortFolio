@@ -20,25 +20,56 @@
   }
 }
 
-#mainBranch {
-  width: 1.625rem;
-  background-color: rgba(255, 255, 255, 0.73);
-  height: 30rem;
-  transition: 0.5s;
-  margin: 0 0.6rem;
-  border-radius: 25px;
+body {
+  font-family: "Jaro", sans-serif;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
 }
 
-.subBranchClass {
+.experienceHeader {
+  color: #f7d3eafa;
+  font-size: 1.72rem;
+  font-weight: 400;
 }
 
-/* Colours Used 
-Gradients: 
-- Background bg-gradient-to-r from-blue-500 to-blue-200
-- Headers bg-gradient-to-r from-red-400 to-yellow-200 
+.experienceCompany {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
 
-Main Colours:
+.experienceBody {
+  color: #fff;
+  font-size: 1.3rem !important;
+  font-weight: 100;
+}
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
+.animated-gradient-text {
+  background: linear-gradient(270deg, #f0d5f5, #b5d3f8, #60a5fa, #b4d4fc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-*/
+.animated-gradient-text-section {
+  background: linear-gradient(270deg, #ecc4f3, #9bc4f6, #60a5fa, #f4bcef);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
