@@ -1,0 +1,44 @@
+.icon-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px;
+}
+
+.icon-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(66, 26, 26, 0.5);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.icon-container:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.icon-container:not(:hover)::before {
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-gradient-skills-section {
+  background: linear-gradient(270deg, #0cf01f, #e016f6, #3212eb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

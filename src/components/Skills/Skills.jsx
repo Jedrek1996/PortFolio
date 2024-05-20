@@ -1,52 +1,30 @@
 import React from "react";
-import Slider from "react-slick";
-import SectionTitle from "../SectionLayout/SectionTitle";
-import SkillsCard from "./SkillsCard";
-import { skills } from "../../../constants/data";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useInView } from "react-intersection-observer";
-import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
-
-import {
-  SkillsNextArrow,
-  SkillsPrevArrow,
-} from "./carouselSettings";
+import { skillsData } from "../../assets/constants/data";
+import SkillDataProvider from "./SkillsDataProvider";
 
 const Skills = () => {
-  const { ref, inView } = useInView();
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 1500,
-    autoplaySpeed: 3400,
-    pauseOnHover: true,
-    nextArrow: <SkillsNextArrow />,
-    prevArrow: <SkillsPrevArrow />,
-  };
-
   return (
-    <div ref={ref}>
-      <section
-        className={`py-px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12 mt-32
-      2xlL h-80 mx-auto align-element mb-8`}
-        style={{ ...(inView ? showStyles : hiddenStyles) }}
-        id="skills"
-      >
-        <SectionTitle text="tech stack" />
-        <Slider {...settings} className={`pt-8`}>
-          {skills.map((skill, index) => (
-            <div key={index}>
-              <h3>{skill.name}</h3>
-              <SkillsCard key={skill.id} {...skill}></SkillsCard>
-            </div>
+    <section
+      className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12 mx-auto align-element mt-32"
+      id="projects"
+    >
+      <div className="w-full flex flex-col justify-center items-center gap-5 text-center mt-24">
+        <div className="text-4xl font-light tracking-wider capitalize mb-8 animated-gradient-skills-section">
+          「Programming Skills」
+        </div>
+        <div className="w-8/12 flex flex-row justify-around flex-wrap gap-5 items-center">
+          {skillsData.map((image, index) => (
+            <SkillDataProvider
+              key={index}
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
           ))}
-        </Slider>
-      </section>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
