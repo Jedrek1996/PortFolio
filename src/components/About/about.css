@@ -34,5 +34,5 @@
 }
 
 .article-expand {
-  transition: all 0.55s ease-in-out; /* Add transition for smooth animation */
+  transition: all 0.55s ease-in-out; 
 }
