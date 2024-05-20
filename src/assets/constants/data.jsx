@@ -28,7 +28,7 @@ import mysqlIcon from "../skillsIcons/mysql.png";
 import goIcon from "../skillsIcons/go.png";
 import javaIcon from "../skillsIcons/java.png";
 import pythonIcon from "../skillsIcons/python.png";
-import dojoToolKitIcon from "../skillsIcons/dojoToolKit.png";
+import dojoToolKitIcon from "../skillsIcons/dojotoolkit.png";
 
 export const skills = [
   {
