@@ -1,32 +1,37 @@
-import { React, useEffect } from "react";
-import aboutSvg from "../../assets/about.svg";
+import React from "react";
 import SectionTitle from "../SectionLayout/SectionTitle";
 import { useInView } from "react-intersection-observer";
 import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
-import { aboutMe } from "../../data";
-import { FaPersonChalkboard } from "react-icons/fa6";
+import { aboutMe } from "../../../constants/data";
+import Lottie from "lottie-react";
+import morpheAnimation from "../../assets/animations/aboutMeAnimation.json";
+import "./About.css";
 
 const About = () => {
   const { ref, inView } = useInView();
+
   return (
     <div ref={ref}>
       <section
-        className=" py-32"
+        className="py-32 about-section"
         id="about"
         style={{ ...(inView ? showStyles : hiddenStyles) }}
       >
-        <div className="align-element grid md:grid-cols-2 items-center gap-16">
-          <img src={aboutSvg} className="w-full h-64" alt="" />
-          <article>
-            <div className="flex items-center">
+        <div className="align-element grid md:grid-cols-2 items-center gap-16 relative">
+          <Lottie
+            className="inline-block max-w-full"
+            animationData={morpheAnimation}
+          />
+          <article className="relative z-10 p-8 bg-white shadow-lg rounded-lg  article-expand hover:scale-110">
+            <div className="flex items-center mb-8">
               <SectionTitle text="About Me" />
-              <FaPersonChalkboard className="h-8 w-8 ml-2 mb-7 text-blue-400" />
             </div>
             <div
-              className="text-slate-500 mt-8 leading-loose font-medium"
+              className="text-slate-500 leading-loose font-medium text-lg"
               dangerouslySetInnerHTML={{ __html: aboutMe }}
-            ></div>
+            />
           </article>
+          <div className="absolute top-0 left-0 w-full h-full bg-blue-50 opacity-75 transform rotate-3 rounded-lg -z-10"></div>
         </div>
       </section>
     </div>
