@@ -11,18 +11,18 @@ const About = () => {
   const { ref, inView } = useInView();
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className="max-w-5xl mx-auto">
       <section
         className="py-32 about-section"
         id="about"
         style={{ ...(inView ? showStyles : hiddenStyles) }}
       >
-        <div className="align-element grid md:grid-cols-2 items-center gap-16 relative">
+        <div className="align-element grid md:grid-cols-2 items-center gap-10 relative max-w">
           <Lottie
             className="inline-block max-w-full"
             animationData={morpheAnimation}
           />
-          <article className="relative z-10 p-8 bg-white shadow-lg rounded-lg  article-expand hover:scale-110">
+          <article className="relative z-10 p-8 bg-white shadow-lg rounded-lg article-expand hover:scale-110">
             <div className="flex items-center mb-8">
               <SectionTitle text="About Me" />
             </div>
