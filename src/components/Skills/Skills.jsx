@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import SectionTitle from "../SectionLayout/SectionTitle";
 import SkillsCard from "./SkillsCard";
-import { skills } from "../../data";
+import { skills } from "../../../constants/data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useInView } from "react-intersection-observer";
@@ -31,8 +31,8 @@ const Skills = () => {
   return (
     <div ref={ref}>
       <section
-        className={`py-px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12 
-      2xlL h-80 mx-auto align-element`}
+        className={`py-px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12  mt-64
+      2xlL h-80 mx-auto align-element mb-8`}
         style={{ ...(inView ? showStyles : hiddenStyles) }}
         id="skills"
       >
