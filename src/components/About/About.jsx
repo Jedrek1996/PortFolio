@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div ref={ref} className="max-w-4xl mx-auto">
       <section
-        className="py-32 about-section"
+        className="py-16 md:py-24 lg:py-32 about-section"
         id="about"
         style={{ ...(inView ? showStyles : hiddenStyles) }}
       >
@@ -22,8 +22,8 @@ const About = () => {
             className="inline-block max-w-full"
             animationData={morpheAnimation}
           />
-          <article className="relative z-10 p-8 bg-white opacity-70 shadow-lg rounded-lg article-expand hover:scale-110">
-            <div className="flex items-center mb-8 opacity-100">
+          <article className="relative z-10 p-6 md:p-8 lg:p-10 bg-white opacity-70 shadow-lg rounded-lg article-expand hover:scale-110">
+            <div className="flex items-center mb-6 md:mb-8 opacity-100">
               <SectionTitle text="About Me" />
             </div>
             <div
