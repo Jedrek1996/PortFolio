@@ -36,7 +36,7 @@
 }
 
 .animated-gradient-skills-section {
-  background: linear-gradient(270deg, #0cf01f, #e016f6, #3212eb);
+  background: linear-gradient(270deg, #03f817, #e016f6, #3212eb);
   background-size: 400% 400%;
   animation: gradientAnimation 20s ease infinite;
   -webkit-background-clip: text;
