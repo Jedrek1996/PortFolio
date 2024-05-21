@@ -7,12 +7,10 @@ import { RxArrowTopRight } from "react-icons/rx";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { projects } from "../../assets/constants/data";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 
-// Configure Swiper to use necessary modules
 SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 const ProjectSlider = () => {
@@ -21,11 +19,15 @@ const ProjectSlider = () => {
       <Swiper
         breakpoints={{
           340: {
-            slidesPerView: 2,
+            slidesPerView: 1, // Adjust to 1 slide per view for smaller screens
             spaceBetween: 15,
           },
           700: {
-            slidesPerView: 3,
+            slidesPerView: 2, // Adjust to 2 slides per view for medium screens
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3, // Adjust to 3 slides per view for larger screens
             spaceBetween: 15,
           },
         }}
@@ -41,7 +43,10 @@ const ProjectSlider = () => {
       >
         {projects.map((project) => (
           <SwiperSlide key={project.title}>
-            <div className="flex flex-col gap-6 mb-20 group relative  text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer">
+            <div
+              id="projects"
+              className="flex flex-col gap-6 mb-10 group relative text-white rounded-xl px-6 py-20 h-[250px] w-full lg:h-[400px] lg:w-full overflow-hidden cursor-pointer"
+            >
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${project.img})` }}
@@ -51,7 +56,7 @@ const ProjectSlider = () => {
                 <h1 className="text-xl lg:text-2xl">{project.title} </h1>
                 <p className="lg:text-[18px]">{project.text} </p>
               </div>
-              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100" />
+              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-green-400 group-hover:rotate-45 duration-100" />
             </div>
           </SwiperSlide>
         ))}
@@ -59,4 +64,5 @@ const ProjectSlider = () => {
     </div>
   );
 };
+
 export default ProjectSlider;
