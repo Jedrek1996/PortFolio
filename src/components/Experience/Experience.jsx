@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../SectionLayout/SectionTitle";
 import {
   VerticalTimeline,
@@ -9,16 +9,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "../../assets/constants/data";
 
 function Experience() {
-  const commonStyles = {
-    background: "rgb(181, 211, 248)",
-    color: "rgb(100 116 139)",
-    border: "none",
-    boxShadow: "0px 0px 10px #ffffff",
-  };
-
-  const commonClassNames = "vertical-timeline-element--work";
-  const contentArrowStyle = { borderRight: "7px solid  rgb(96 165 250)" };
-
   return (
     <section
       id="experience"
@@ -31,14 +21,22 @@ function Experience() {
           {experiencesData.flat().map((experience, index) => (
             <VerticalTimelineElement
               key={index}
-              className={commonClassNames}
-              contentStyle={commonStyles}
-              contentArrowStyle={contentArrowStyle}
-              iconStyle={commonStyles}
+              className="vertical-timeline-element--work"
+              contentStyle={{
+                background: "rgb(181, 211, 248)",
+                color: "rgb(100 116 139)",
+                border: "none",
+                boxShadow: "0px 0px 10px #ffffff",
+              }}
+              contentArrowStyle={{ borderRight: "7px solid  rgb(96 165 250)" }}
+              iconStyle={{
+                background: "rgb(181, 211, 248)",
+                color: "rgb(100 116 139)",
+              }}
               icon={
                 <img
                   src={experience.icon}
-                  className="rounded-full w-15 h-15 mx-auto"
+                  className="rounded-full w-12 h-12 md:w-16 md:h-16 mx-auto"
                 />
               }
             >
