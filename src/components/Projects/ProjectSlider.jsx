@@ -15,7 +15,14 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 
 const ProjectSlider = () => {
   return (
-    <div className="flex items-center justify-center flex-col h-[900px]">
+    <div className="flex items-center justify-center flex-col h-[750px]">
+      <div className="flex items-center justify-center h-[100px] text-center text-red-600 text-3xl font-bold z-30">
+        <span style={{ textDecorationColor: "white" }} className="line-through">
+          Previous Work
+        </span>
+        <span className="text-white ml-2">(To be completed)</span>
+      </div>
+
       <Swiper
         breakpoints={{
           340: {

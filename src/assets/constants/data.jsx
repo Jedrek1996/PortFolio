@@ -145,25 +145,25 @@ export const projects = [
 
 export const aboutMe = `
 <p>
-Hey there! I'm a nature enthusiast and adventure seeker who found
-my way into the exciting world of tech. I studied Geographic
-Information Science at the University at Buffalo, Sim Campus,
-where I learned to appreciate the beauty of our planet and its
+Hey there! I'm a <span style="color: #FF5722;">nature enthusiast</span> and adventure seeker who found
+my way into the exciting world of tech. I studied <span style="color: #FF5722;">Geographic
+Information Science</span> at the University at Buffalo, Sim Campus,
+where I learned to appreciate the beauty of our <span style="color: #009688;">planet</span> and its
 data-driven wonders.<br><br>
-When I'm not exploring the great outdoors,
+When I'm not exploring the great <span style="color: #FF5722;">outdoors</span>,
 you'll likely find me immersed in the virtual world of video
 games, especially Teamfight Tactics. Gaming isn't just a hobby for
 me; it's a way to unwind and sharpen my strategic skills.<br><br>
 After graduation, I dived headfirst into software development, spending
-almost two years crafting code and solving problems. While I
+almost<span style="color: #FF5722;"> two years </span> crafting code and solving problems. While I
 enjoyed the full spectrum of development, my heart belongs to
 front-end work. There's something magical about bringing designs
 to life and creating seamless user experiences.<br><br>
 Outside of work,
-I'm a gym enthusiast, dedicated to maintaining a healthy body and
+I'm a <span style="color: #FF5722;">gym enthusiast</span>, dedicated to maintaining a healthy body and
 mind. And of course, I'm always on the lookout for opportunities
 to level up my front-end development skills. Let's connect and
-create something awesome together!\n
+create something awesome together!
 </p>
 `;
 

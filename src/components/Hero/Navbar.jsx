@@ -9,14 +9,23 @@ const Navbar = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 700);
     };
+
+    const handleScroll = () => {
+      if (isMobile && window.scrollY > 50) {
+        setShowLinks(false);
+      }
+    };
+
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isMobile]);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
@@ -31,21 +40,21 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`h-screen flex flex-col fixed left-0 top-0 ${
+      className={`flex flex-col fixed mt-4 ml-6 top-0 left-0 z-50 text-3xl ${
         isMobile ? "sm:hidden" : ""
       }`}
     >
       {isMobile && (
         <button
-          className="text-white hover:text-blue-500 transition-all duration-500"
-          onClick={toggleLinks} // Toggle link visibility when hamburger icon is clicked
+          className="text-white transition-all duration-700 ease-in-out"
+          onClick={toggleLinks}
         >
           ☰
         </button>
       )}
       <div
-        className={`flex flex-col gap-y-10 mt-10 ml-2 ${
-          isMobile && !showLinks ? "hidden" : "" // Hide links on small screens when showLinks is false
+        className={`flex flex-col gap-y-10 mt-10 ${
+          isMobile && !showLinks ? "hidden" : ""
         }`}
       >
         {links.map((link, index) => {
@@ -54,10 +63,10 @@ const Navbar = () => {
             <a
               key={id}
               href={href}
-              className={`ml-3 capitalize text-2xl text-white hover:text-[#f0d5f5] transition-all duration-500
-              hover:cursor-pointer hover:scale-110 ${
-                activeLink === index ? "text-pink-300 text-3xl" : ""
-              }`}
+              className={` capitalize text-2xl text-white hover:text-[#f0d5f5] transition-all duration-700 ease-in-out
+          hover:cursor-pointer hover:scale-110 ${
+            activeLink === index ? "text-pink-300 text-3xl" : ""
+          }`}
               onClick={() => handleSetActiveLink(index)}
             >
               <Icon className="mr-2 inline-block ml-2" />

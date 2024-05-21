@@ -12,7 +12,10 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 custom-smaller sm:w-5/12 md:w-8/12 lg:w-10/12 2xl:w-11/12 mx-auto align-element"
+      className="
+      sm:px-8 md:px-12 lg:px-16 xl:px-20 
+      sm:w-5/12 md:w-5/12 lg:w-9/12 2xl:w-11/12 
+      mx-auto align-element"
     >
       <div>
         <SectionTitle text="Experience" />
@@ -36,7 +39,8 @@ function Experience() {
               icon={
                 <img
                   src={experience.icon}
-                  className="rounded-full w-12 h-12 md:w-16 md:h-16 mx-auto"
+                  className="rounded-full sm:w-10 sm:h-10 md:w-16 md:h-16 mx-auto
+                  "
                 />
               }
             >

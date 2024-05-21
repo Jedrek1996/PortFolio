@@ -41,7 +41,7 @@ const SkillDataProvider = ({ src, width, height, index, name }) => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="absolute bottom-0 left-0 bg-[#7c1ba59e] text-white py-2 px-3 rounded-full text-sm"
+          className="absolute bottom-20 left-0 bg-[#93f7bdb8] text-white py-2 px-3 rounded-full text-sm"
         >
           {name}
         </motion.div>
