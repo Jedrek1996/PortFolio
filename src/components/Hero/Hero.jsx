@@ -6,7 +6,7 @@ import "../../index.css";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <section className="flex items-center justify-center h-screen" id="home">
       <div className="max-w-4xl mx-auto px-4 py-8 sm:py-24 sm:px-6 lg:px-8 flex flex-col items-center text-center">
         <div className="relative flex justify-end w-full">
           <h1 className="text-8xl font-thin tracking-wider">
@@ -47,7 +47,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
