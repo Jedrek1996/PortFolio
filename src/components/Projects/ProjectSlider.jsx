@@ -4,8 +4,10 @@ import SwiperCore from "swiper";
 import "swiper/swiper-bundle.css"; // Import the CSS bundle
 
 import { RxArrowTopRight } from "react-icons/rx";
+import { FaGithub } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
-import { projects } from "../../assets/constants/data";
+import { projectsData } from "../../assets/constants/data";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,17 +18,15 @@ SwiperCore.use([Autoplay, FreeMode, Pagination]);
 const ProjectSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[750px]">
-      <div className="flex items-center justify-center h-[100px] text-center text-red-600 text-3xl font-bold z-30">
-        <span style={{ textDecorationColor: "white" }} className="line-through">
-          Previous Work
-        </span>
-        <span className="text-white ml-2">(To be completed)</span>
+      <div className="flex items-center justify-center h-[100px] text-center text-white text-3xl font-bold z-30">
+        <span style={{ textDecorationColor: "white" }}>Personal Projects</span>
+        <span className="text-red-100 ml-2">(In Progress)</span>
       </div>
 
       <Swiper
         breakpoints={{
           340: {
-            slidesPerView: 1, // Adjust to 1 slide per view for smaller screens
+            slidesPerView: 1, // Adjust to   1 slide per view for smaller screens
             spaceBetween: 15,
           },
           700: {
@@ -48,7 +48,7 @@ const ProjectSlider = () => {
         }}
         className="max-w-[90%] lg:max-w-[80%]"
       >
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <SwiperSlide key={project.title}>
             <div
               id="projects"
@@ -63,6 +63,19 @@ const ProjectSlider = () => {
                 <h1 className="text-xl lg:text-2xl">{project.title} </h1>
                 <p className="lg:text-[18px]">{project.text} </p>
               </div>
+              <div className="flex absolute bottom-12 left-6 mb-3">
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="w-[25px] h-[25px] mr-2 hover:text-green-400 duration-200" />
+                </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TbWorldWww className="w-[25px] h-[25px] hover:text-green-400 duration-200" />
+                </a>
+              </div>
+
               <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-green-400 group-hover:rotate-45 duration-100" />
             </div>
           </SwiperSlide>

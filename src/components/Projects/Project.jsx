@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../SectionLayout/SectionTitle";
-import { projects } from "../../assets/constants/data";
+import { projectsData } from "../../assets/constants/data";
 import ProjectsCard from "./ProjectsCard";
 
 const Project = () => {
@@ -11,7 +11,7 @@ const Project = () => {
     >
       <SectionTitle text="web creations"></SectionTitle>
       <div className="py-16 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
-        {projects.map((project) => {
+        {projectsData.map((project) => {
           return <ProjectsCard key={project.id} {...project}></ProjectsCard>;
         })}
       </div>
