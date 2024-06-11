@@ -64,11 +64,11 @@ const ProjectSlider = () => {
                 <p className="lg:text-[18px]">{project.text} </p>
               </div>
               <div className="flex absolute bottom-12 left-6 mb-3">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <FaGithub className="w-[25px] h-[25px] mr-2 hover:text-green-400 duration-200" />
+                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <FaGithub className="w-[25px] h-[25px] mr-2 hover:text-green-400 duration-200"></FaGithub>
                 </a>
                 <a
-                  href={project.github}
+                  href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

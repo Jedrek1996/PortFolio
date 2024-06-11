@@ -141,7 +141,7 @@ const createProject = (img, url, github, title, text) => ({
 export const projectsData = [
   createProject(
     "",
-    "https://react-projects.netlify.app/",
+    "",
     "https://github.com/Jedrek1996/MoneyGoWhere_Frontend",
     "MoneyGoWhere",
     "A money tracking expense similar to SplitWise, where users are able to add friends into groups and split their expenses. A dashboard is rendered based on the expense categories. Created with Python and Reactjs."
@@ -151,14 +151,14 @@ export const projectsData = [
     "https://jedpomdoro.netlify.app/",
     "https://github.com/Jedrek1996/PomodoroTimer",
     "Pomdoro Timer",
-    "A Pomdoro Timer application created with Next.js and Typescript."
+    "A Pomdoro Timer application. Created with Next.js and Typescript."
   ),
   createProject(
     "",
     "https://taskmanagernode.onrender.com/",
     "https://github.com/Jedrek1996/TaskManagerNode",
     "Task Manager",
-    "A task manager with CRUD operations, created with Node.js and MongoDB."
+    "A task manager with CRUD operations. Created with Node.js and MongoDB in the midst of intergrating Google oAuth JWT."
   ),
   createProject(
     "",
