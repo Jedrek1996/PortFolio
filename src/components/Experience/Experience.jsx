@@ -14,7 +14,7 @@ function Experience() {
       id="experience"
       className="
       sm:px-8 md:px-12 lg:px-16 xl:px-20 
-      sm:w-5/12 md:w-5/12 lg:w-9/12 2xl:w-11/12 
+       md:w-9/12 lg:w-9/12 2xl:w-11/12 
       mx-auto align-element"
     >
       <div>
@@ -39,7 +39,7 @@ function Experience() {
               icon={
                 <img
                   src={experience.icon}
-                  className="rounded-full sm:w-10 sm:h-10 md:w-16 md:h-16 mx-auto
+                  className="rounded-full sm:w-10 sm: w-10 md:w-20 lg:w-16  mx-auto
                   "
                 />
               }
