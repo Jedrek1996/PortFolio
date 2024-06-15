@@ -119,13 +119,13 @@ export const skillsData = [
   createSkill("React Query", reactQueryIcon),
   createSkill("Type Script", tsIcon),
   createSkill("Framer Motion", framerIcon),
-  createSkill("Node js", nodeJsIcon),
+  createSkill("MongoDB", mongoDBIcon, 70, 70),
   createSkill("My SQL", mysqlIcon),
-  createSkill("Go", goIcon),
   createSkill("Java", javaIcon),
+  createSkill("Node js", nodeJsIcon),
+  createSkill("Go", goIcon),
   createSkill("Python", pythonIcon),
   createSkill("DojoToolKit", dojoToolKitIcon, 65, 65),
-  createSkill("MongoDB", mongoDBIcon, 70, 70),
 ];
 
 const createProject = (img, url, github, title, text) => ({
@@ -144,7 +144,7 @@ export const projectsData = [
     "",
     "https://github.com/Jedrek1996/MoneyGoWhere_Frontend",
     "MoneyGoWhere",
-    "A money tracking expense similar to SplitWise, where users are able to add friends into groups and split their expenses. A dashboard is rendered based on the expense categories. Created with Python and Reactjs."
+    "A money tracking expense similar to SplitWise. Users are able to add friends and split their expenses. A dashboard is rendered based on the expense categories. Created with Python and Reactjs."
   ),
   createProject(
     "",
@@ -158,20 +158,14 @@ export const projectsData = [
     "https://taskmanagernode.onrender.com/",
     "https://github.com/Jedrek1996/TaskManagerNode",
     "Task Manager",
-    "A task manager with CRUD operations. Created with Node.js and MongoDB in the midst of intergrating Google oAuth JWT."
+    "A task manager featuring CRUD operations, fully integrated with Google OAuth and JWT. Created with Node.js and MongoDB."
   ),
   createProject(
     "",
     "",
     "https://github.com",
-    "Pet Spa Website (To Do Custom Request)",
+    "Pet Spa Website (In Progress)",
     "Nil"
   ),
-  createProject(
-    "",
-    "",
-    "https://github.com/",
-    "E-Commerce Project (To Do)",
-    "Nil"
-  ),
+  createProject("", "", "https://github.com/", "Job Website (To Do)", "Nil"),
 ];

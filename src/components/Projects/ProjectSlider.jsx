@@ -24,7 +24,6 @@ const ProjectSlider = () => {
     <div className="flex items-center justify-center flex-col h-[750px]">
       <div className="flex items-center justify-center h-[100px] text-center text-white text-3xl font-bold z-30">
         <span style={{ textDecorationColor: "white" }}>Personal Projects</span>
-        <span className="text-red-100 ml-2">(In Progress)</span>
       </div>
 
       <Swiper

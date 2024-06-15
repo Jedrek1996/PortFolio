@@ -26,12 +26,14 @@ function Experience() {
               key={index}
               className="vertical-timeline-element--work"
               contentStyle={{
-                background: "rgb(181, 211, 248)",
+                background: "rgba(152, 152, 243, 0.161)",
                 color: "rgb(100 116 139)",
                 border: "none",
-                boxShadow: "0px 0px 10px #ffffff",
+                boxShadow: "0 0 16px #ffffffc1",
               }}
-              contentArrowStyle={{ borderRight: "7px solid  rgb(96 165 250)" }}
+              contentArrowStyle={{
+                borderRight: "7px solid #ffffff30",
+              }}
               iconStyle={{
                 background: "rgb(181, 211, 248)",
                 color: "rgb(100 116 139)",
