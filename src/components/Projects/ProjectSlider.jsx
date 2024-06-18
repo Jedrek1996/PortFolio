@@ -62,7 +62,7 @@ const ProjectSlider = () => {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${project.img})` }}
               />
-              <div className="absolute inset-0 bg-black sm:bg-pink-400 md:bg-blue-400 lg:bg-green-400 xl:bg-red-400 opacity-10 group-hover:opacity-50"></div>
+              <div className="absolute inset-0 bg-black sm:bg-pink-400 md:bg-blue-400 lg:bg-green-300 xl:bg-red-400 opacity-10 group-hover:opacity-50"></div>
 
               <div className="relative flex flex-col gap-3">
                 <h1 className="text-xl lg:text-2xl">{project.title} </h1>
