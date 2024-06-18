@@ -8,6 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { projectsData } from "../../assets/constants/data";
+import SectionTitle from "../SectionLayout/SectionTitle";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -23,13 +24,13 @@ const ProjectSlider = () => {
   return (
     <div className="flex items-center justify-center flex-col h-[750px]">
       <div className="flex items-center justify-center h-[100px] text-center text-white text-3xl font-bold z-30">
-        <span style={{ textDecorationColor: "white" }}>Personal Projects</span>
+        <SectionTitle text="Personal Projects" />
       </div>
 
       <Swiper
         breakpoints={{
           340: {
-            slidesPerView: 1, // Adjust to   1 slide per view for smaller screens
+            slidesPerView: 1, // Adjust to 1 slide per view for smaller screens
             spaceBetween: 15,
           },
           700: {
@@ -67,8 +68,8 @@ const ProjectSlider = () => {
                 <h1 className="text-xl lg:text-2xl">{project.title} </h1>
                 <p className="lg:text-[18px]">
                   {window.innerWidth < 858
-                    ? project.text.split(" ").slice(0, 20).join(" ") +
-                      (project.text.split(" ").length > 20 ? "..." : "")
+                    ? project.text.split(" ").slice(0, 30).join(" ") +
+                      (project.text.split(" ").length > 30 ? "..." : "")
                     : project.text}
                 </p>
               </div>
@@ -81,10 +82,21 @@ const ProjectSlider = () => {
                   <FaGithub className="w-[25px] h-[25px] mr-2 hover:text-green-400 duration-200"></FaGithub>
                 </a>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  <TbWorldWww className="w-[25px] h-[25px] hover:text-green-400 duration-200" />
+                  <TbWorldWww
+                    className={`w-[25px] h-[25px] duration-200 ${
+                      project.alertText
+                        ? "text-gray-300 cursor-default"
+                        : "hover:text-green-400"
+                    }`}
+                  />
                 </a>
               </div>
-              <RxArrowTopRight className="absolute bottom-3 left-5 w-[35px] h-[35px] text-white group-hover:text-green-400 group-hover:rotate-45 duration-100" />
+              <div className="flex">
+                <RxArrowTopRight className="absolute bottom-3 left-5 w-[35px] h-[35px] text-white group-hover:text-green-400 group-hover:rotate-45 duration-100" />
+                <div className="absolute bottom-2 left-16 w-9/12 h-[35px] text-sm text-orange-200 font-thin">
+                  {project.alertText ? project.alertText : ""}
+                </div>
+              </div>
             </div>
           </SwiperSlide>
         ))}

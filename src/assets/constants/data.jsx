@@ -75,7 +75,7 @@ export const experiencesData = [
       "NCS",
       "Fullstack Software Engineer at NCS, assigned to the Attorney General's Chambers project",
       ncsLogo,
-      "May 2023 - Present"
+      "May 2023 - May 2024"
     ),
     createExperience(
       "Software Engineer Trainee",
@@ -128,13 +128,14 @@ export const skillsData = [
   createSkill("DojoToolKit", dojoToolKitIcon, 65, 65),
 ];
 
-const createProject = (img, url, github, title, text) => ({
+const createProject = (img, url, github, title, text, alertText) => ({
   id: nanoid(),
   img,
   url,
   github,
   title,
   text,
+  alertText,
 });
 
 // Projects Data
@@ -144,28 +145,39 @@ export const projectsData = [
     "",
     "https://github.com/Jedrek1996/MoneyGoWhere_Frontend",
     "MoneyGoWhere",
-    "A money tracking expense similar to SplitWise. Users are able to add friends and split their expenses. A dashboard is rendered based on the expense categories. Created with Python and Reactjs."
-  ),
-  createProject(
-    "",
-    "https://jedpomdoro.netlify.app/",
-    "https://github.com/Jedrek1996/PomodoroTimer",
-    "Pomdoro Timer",
-    "A Pomdoro Timer application. Created with Next.js and Typescript."
+    "An expense tracker similar to SplitWise, allowing users to add friends, split expenses, and view a dashboard categorized by expenses. Created with Python and Reactjs.",
+    "Application disabled to prevent AWS charges."
   ),
   createProject(
     "",
     "https://taskmanagernode.onrender.com/",
     "https://github.com/Jedrek1996/TaskManagerNode",
     "Task Manager",
-    "A task manager featuring CRUD operations, fully integrated with Google OAuth and JWT. Created with Node.js and MongoDB."
+    "A task manager featuring CRUD operations, fully integrated with Google OAuth and JWT. Created with Node.js and MongoDB.",
+    ""
+  ),
+  createProject(
+    "",
+    "https://jedpomdoro.netlify.app/",
+    "https://github.com/Jedrek1996/PomodoroTimer",
+    "Pomdoro Timer",
+    "A Pomdoro Timer application. Created with Next.js and Typescript.",
+    ""
+  ),
+  createProject(
+    "",
+    "",
+    "https://github.com/",
+    "Job Website (In Progress)",
+    "In progress. Working with Node.js and React.js.",
+    ""
   ),
   createProject(
     "",
     "",
     "https://github.com",
-    "Pet Spa Website (In Progress)",
-    "Nil"
+    "Pet Spa Website (To Do)",
+    "Custom Request",
+    ""
   ),
-  createProject("", "", "https://github.com/", "Job Website (To Do)", "Nil"),
 ];

@@ -3,6 +3,7 @@ import SectionTitle from "../SectionLayout/SectionTitle";
 import { useInView } from "react-intersection-observer";
 import { hiddenStyles, showStyles } from "../CustomCss&Settings/observerStyles";
 import { aboutMe } from "../../assets/constants/data";
+import me from "../../assets/about/me.jpg";
 import Lottie from "lottie-react";
 import morpheAnimation from "../../assets/animations/aboutMeAnimation.json";
 import "./about.css";
@@ -18,9 +19,14 @@ const About = () => {
         style={{ ...(inView ? showStyles : hiddenStyles) }}
       >
         <div className="align-element grid md:grid-cols-2 items-center gap-10 relative max-w">
-          <Lottie
+          {/* <Lottie
             className="inline-block max-w-full"
             animationData={morpheAnimation}
+          /> */}
+          <img
+            src={me}
+            alt="About Me"
+            className="inline-block max-w-full rounded-md opacity-75 w-full md:max-w-sm lg:max-w-xl"
           />
           <article className="relative z-10 p-6 md:p-8 lg:p-10 bg-white opacity-70 shadow-lg rounded-lg article-expand hover:scale-110">
             <div className="flex items-center mb-6 md:mb-8 opacity-100">

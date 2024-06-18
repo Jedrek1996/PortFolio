@@ -50,7 +50,7 @@ function Experience() {
                 {experience.position}
               </h3>
               <h4 className="vertical-timeline-element-subtitle text-xs experienceCompany">
-                {experience.company} ({experience.date})
+                {experience.company}&nbsp;&nbsp;({experience.date})
               </h4>
               <p className="experienceBody font-normal">
                 {experience.description}
