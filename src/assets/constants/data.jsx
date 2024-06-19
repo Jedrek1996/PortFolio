@@ -167,17 +167,17 @@ export const projectsData = [
   createProject(
     "",
     "",
-    "https://github.com/",
+    "https://github.com/Jedrek1996/JobMERN",
     "Job Website (In Progress)",
-    "In progress. Working with Node.js and React.js.",
-    ""
+    "A job website, includes JWT auth and CRUD operation for jobs. Created with Node.js and React.js.",
+    "Yet to be deployed."
   ),
   createProject(
-    "",
-    "",
+    "https://github.com/Jedrek1996/PetSpa",
+    "https://kkpetspa.netlify.app/",
     "https://github.com",
-    "Pet Spa Website (To Do)",
-    "Custom Request",
+    "Pet Spa Website (In Progress)",
+    "A custom requested Pet Spa website. Created with React.js and Typescript.js. Future implementation with Node.js ",
     ""
   ),
 ];
