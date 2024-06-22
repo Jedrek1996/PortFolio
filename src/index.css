@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  overflow: overlay;
   font-family: "Jaro", sans-serif;
   cursor: default;
   -webkit-user-select: none; /* Safari */
@@ -60,3 +61,7 @@ body {
  #93f7bc, #b5d3f8, #f0d5f5
  green ,  blue   , pink
 */
+
+::-webkit-scrollbar {
+  display: none;
+}
