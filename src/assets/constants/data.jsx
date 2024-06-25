@@ -150,6 +150,22 @@ export const projectsData = [
   ),
   createProject(
     "",
+    "https://jobs-mern-stack.onrender.com/",
+    "https://github.com/Jedrek1996/JobMERN",
+    "Job Website (In Progress)",
+    "A job website, includes JWT auth and CRUD operation for jobs. Created with Node.js and React.js.",
+    ""
+  ),
+  createProject(
+    "https://github.com/Jedrek1996/PetSpa",
+    "https://kkpetspa.netlify.app/",
+    "https://github.com",
+    "Pet Spa Website (In Progress)",
+    "A custom requested Pet Spa website. Created with React.js and Typescript.js. Future implementation with Node.js ",
+    ""
+  ),
+  createProject(
+    "",
     "https://taskmanagernode.onrender.com/",
     "https://github.com/Jedrek1996/TaskManagerNode",
     "Task Manager",
@@ -162,22 +178,6 @@ export const projectsData = [
     "https://github.com/Jedrek1996/PomodoroTimer",
     "Pomdoro Timer",
     "A Pomdoro Timer application. Created with Next.js and Typescript.",
-    ""
-  ),
-  createProject(
-    "",
-    "",
-    "https://github.com/Jedrek1996/JobMERN",
-    "Job Website (In Progress)",
-    "A job website, includes JWT auth and CRUD operation for jobs. Created with Node.js and React.js.",
-    "Yet to be deployed."
-  ),
-  createProject(
-    "https://github.com/Jedrek1996/PetSpa",
-    "https://kkpetspa.netlify.app/",
-    "https://github.com",
-    "Pet Spa Website (In Progress)",
-    "A custom requested Pet Spa website. Created with React.js and Typescript.js. Future implementation with Node.js ",
     ""
   ),
 ];
